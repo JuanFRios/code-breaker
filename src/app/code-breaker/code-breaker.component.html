@@ -1,15 +1,15 @@
-<a routerLink="/">Atrás</a>
+<a routerLink="/" id="back-btn">Atrás</a>
 <form [formGroup]="form" action="" (submit)="verifyNumber()">
-    <input maxlength='4' formControlName="number" />
+    <input maxlength='4' formControlName="number" id="input-number"/>
 
     <div class="center">
         <div *ngIf="response">
-            <p class="response">{{response}}</p>
+            <p class="response" id="response">{{response}}</p>
         </div>
     
     
         <div class="wrapper">
-            <a class="cta" submit (click)="verifyNumber()">
+            <a class="cta" submit (click)="verifyNumber()" id="bet-btn">
                 <span>Apostar</span>
                 <span>
                     <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg"
